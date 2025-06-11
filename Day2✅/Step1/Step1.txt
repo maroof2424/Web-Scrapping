@@ -1,0 +1,4 @@
+🔧 Step 1: Install Required Libraries
+In your terminal or command prompt, run:
+
+pip install beautifulsoup4 requests

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Register Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            background-color: black;
+            color: white;
+            height: 100%;
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            width: 60vw;
+            background-color: aquamarine;
+            border-radius: 20px;
+            padding: 30px;
+            gap: 10px;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 6%;
+        }
+
+        input,
+        label {
+            color: black;
+            font-size: 1.1rem;
+        }
+
+        input[type="submit"] {
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <form method="post" action="/submit">
+            <h1>Python Register Form</h1>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age: </label>
+            <input type="number" id="age" name="age" required>
+
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</body>
+
+</html>
